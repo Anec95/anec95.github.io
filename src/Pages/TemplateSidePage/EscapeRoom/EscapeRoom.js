@@ -103,7 +103,7 @@ const World = styled.div`
 
 function EscapeRoom() {
     const [dark, setDark] = useState(false)
-    const constraintsRef = useRef(null)
+    // const constraintsRef = useRef(null)
     // const [dragDrop, setDragDrop] = useState([false, false])
 
 

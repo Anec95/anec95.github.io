@@ -65,7 +65,6 @@ function AnimetedRoutes() {
                         functionMinus={indexMinus}
                     />}>
                         <Route path='/template/escape_room' element={<EscapeRoom />} />
-                        <Route path='/template/girl' element={<Cooking />} />
                     </Route>
                 </Route>
             </Routes>

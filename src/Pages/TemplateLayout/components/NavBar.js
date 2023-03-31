@@ -10,11 +10,12 @@ function NavBar(props) {
     useEffect(() => {
         if(props.index === 0) {
             navigate("/template/escape_room")
-        } else if(props.index === 1) {
-            navigate("/template/girl")
-        } else {
+        } 
+        // else if(props.index === 1) {
+        //     navigate("/template/girl")
+        // } else {
             
-        }  
+        // }  
     }, [props.index])
 
     

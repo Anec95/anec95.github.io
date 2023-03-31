@@ -1,5 +1,5 @@
 import escape_room from 'Assets/images/photo-template/escape_room.png'
-import second_template from 'Assets/images/analogic-photo/girl-2021.jpg'
+// import second_template from 'Assets/images/analogic-photo/girl-2021.jpg'
 
 export const dataCardTemplates = [
     {

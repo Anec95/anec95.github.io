@@ -4,17 +4,18 @@ import { Link } from "react-router-dom";
 // CARDCONTAINER
 
 export const CardStorage = styled.div`
-    width: 80%;
+    width: 80%; 
     height: 500px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
     border-radius: 12px;
     box-shadow: inset 2px 2px 10px var(--dark);
     background-color: var(--light);
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
 
     @media (max-width: 500px) {
         width: 85%;
@@ -25,33 +26,33 @@ export const CardStorage = styled.div`
         width: 85%;
         height: 600px;
         margin-top: 50px;
-    }
+    } 
 ` 
 
 
 //  CARD
 
 export const Card = styled.div`
-    display: inline-block;
     background-color: var(--background);
-    box-shadow: 2px 2px 10px var(--dark);
+    /* box-shadow: 2px 2px 10px var(--dark); */
     width: 350px;
-    height: 90%;
-    margin-left: 40px;
-    margin-top: 25px;
+    height: 480px;
+    /* margin-left: 40px;
+    margin-top: 25px; */
     border-radius: 12px;
+    z-index: 10;
 
     @media (max-width: 500px) {
         width: 290px;
-        margin-left: 0px;
-        margin-top: 15px;
+        /* margin-left: 0px;
+        margin-top: 15px; */
         height: 94%;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
         width: 320px;
-        margin: auto;
-        margin-top: 10px;
+        /* margin: auto;
+        margin-top: 10px; */
         height: 96%;
     }
 `

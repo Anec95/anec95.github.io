@@ -1,110 +1,47 @@
 import { CardStorage } from "Pages/Portfolio/components/Carousel/styledComponents/styledCarousel"
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
 import Card from "../Card/Card"
-import Button from "../Button/Button"
-import { useState, useEffect } from "react"
-import { dataCardProjects, dataCardProjectsSmartphone, dataCardProjectsTablet } from "Data/dataCardProjects"
+import { dataCardProjects } from "Data/dataCardProjects"
 
 
 
-function CardContainer(props) {
-    const [cards, setCards] = useState(dataCardProjects)
-    const [cardNumber, setCardNumber] = useState(2)
+function CardContainer() {
+    const responsive = {
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1001 },
+        items: 4
+      },
+      tablet: {
+        breakpoint: { max: 1000, min: 501 },
+        items: 1
+      },
+      mobile: {
+        breakpoint: { max: 500, min: 0 },
+        items: 1
+      }
+    };
 
-    useEffect(() => {
-        if (props.widthPage <= 500) {
-            setCards(dataCardProjectsSmartphone)
-            setCardNumber(0)
-        } else if (props.widthPage > 500 && props.widthPage <= 900) {
-            setCards(dataCardProjectsTablet)
-            setCardNumber(1)
-        } else {
-            setCards(dataCardProjects)
-            setCardNumber(2)
-        }
-    }, [props.widthPage])
-    
-    
-    const handleLeftClick = () => {
-        const prevState = [...cards];
-
-        // find first current active card - so we could make it inactive
-        const firstCurrentActiveCardIdx = prevState // get the idx of the one with the highest number of pos from active cards 
-          .filter((ft) => ft.active === true) // get only the active cards 
-          .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))[0].idx; // basically getting the idx of the one with the highest pos
-        
-        // find next inactive card - so we could make it active
-        var nextInactiveCardIdx;
-        if (prevState.filter((ft) => ft.active === true)[cardNumber].idx !== prevState.length) // di default 2
-          nextInactiveCardIdx = prevState.filter((ft) => ft.active === true)[cardNumber].idx + 1 // di default 2
-        else
-          nextInactiveCardIdx = prevState.filter((ft) => ft.active === false)[0].idx
-        
-        // update
-        prevState.find((f) => f.idx === firstCurrentActiveCardIdx).active = false;
-        prevState.find((f) => f.idx === nextInactiveCardIdx).active = true;
-        
-        // maximize pos
-        prevState.find((f) => f.idx === firstCurrentActiveCardIdx).pos =
-          Math.max.apply(
-            null,
-            prevState.map(function (o) {
-              return o.pos;
-            })
-          ) + 1;
-    
-        // update state
-        setCards(prevState);
-      };
-    
-      const handleRightClick = () => {
-        const prevState = [...cards];
-
-        // find last current active card - so we could make it inactive
-        const lastCurrentActiveCardIdx = prevState // get the idx of the one with the highest number of pos from active cards 
-          .filter((ft) => ft.active === true) // get only the active cards 
-          .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))[cardNumber].idx; // di default 2 - basically getting the idx of the one with the highest pos
-        
-        // find next inactive card - so we could make it active
-        var previousInactiveCardIdx;
-        if (prevState.filter((ft) => ft.active === false)[0].idx !== 1)
-          previousInactiveCardIdx = prevState.filter((ft) => ft.active === false)[cardNumber].idx //di default 2
-        else 
-          previousInactiveCardIdx = prevState.filter((ft) => ft.active === true)[0].idx - 1
-        
-        // update
-        prevState.find((f) => f.idx === lastCurrentActiveCardIdx).active = false;
-        prevState.find((f) => f.idx === previousInactiveCardIdx).active = true;
-        
-        // maximize pos
-        prevState.find((f) => f.idx === previousInactiveCardIdx).pos =
-          Math.min.apply(
-            null,
-            prevState.map(function (o) {
-              return o.pos;
-            })
-          ) - 1;
-    
-        // update state
-        setCards(prevState);
-      };
+    const cards = dataCardProjects.map(data => {
+        return <Card key={data.idx} {...data} />
+    })
 
     return (
-        <>
-            <CardStorage>
-                <Button direction={"left"} function={handleRightClick} />
-                {cards
-                    .filter((f) => f.active === true)
-                    .sort((a, b) => (a.pos > b.pos ? 1: b.pos > a.pos ? -1 : 0))
-                    .map((card, index) => (
-                        <Card key={index} {...card} />
-                    ))
-                }
-                <Button direction={"right"} function={handleLeftClick} />
-            </CardStorage>
-            
-        </>
-        
+        <CardStorage>
+            <Carousel
+              style={{zIndex: 3}}
+              responsive={responsive}
+            >
+                {cards}
+            </Carousel> 
+        </CardStorage>     
     )
+
 }
 
 export default CardContainer

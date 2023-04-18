@@ -39,7 +39,6 @@ function AnimetedRoutes() {
         }
     }
 
-    console.log(templateIndex)
 
     return (
         <AnimatePresence>

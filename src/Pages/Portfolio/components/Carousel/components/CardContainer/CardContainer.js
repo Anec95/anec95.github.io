@@ -1,7 +1,6 @@
 import { CardStorage } from "Pages/Portfolio/components/Carousel/styledComponents/styledCarousel"
-import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-import Card from "../Card/Card"
+import CardProject from "../Card/Card"
 import { dataCardProjects } from "Data/dataCardProjects"
 
 
@@ -10,7 +9,7 @@ function CardContainer() {
     const responsive = {
       superLargeDesktop: {
         // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 3000 },
+        breakpoint: { max: 4000, min: 3001 },
         items: 5
       },
       desktop: {
@@ -28,18 +27,17 @@ function CardContainer() {
     };
 
     const cards = dataCardProjects.map(data => {
-        return <Card key={data.idx} {...data} />
+        return <CardProject key={data.idx} {...data} />
     })
 
     return (
-        <CardStorage>
-            <Carousel
-              style={{zIndex: 3}}
-              responsive={responsive}
+        <>
+            <CardStorage
+                responsive={responsive}
             >
                 {cards}
-            </Carousel> 
-        </CardStorage>     
+            </CardStorage> 
+        </>     
     )
 
 }

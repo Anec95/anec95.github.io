@@ -19,11 +19,12 @@ export const CardStorage = styled(Carousel)`
     @media (max-width: 500px) {
         width: 85%;
         margin-top: 15px;
+        height: 400px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
         width: 85%;
-        height: 600px;
+        height: 470px;
         margin-top: 50px;
     } 
 ` 
@@ -40,12 +41,12 @@ export const Card = styled.div`
 
     @media (max-width: 500px) {
         width: 290px;
-        height: 94%;
+        height: 320px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
         width: 320px;
-        height: 96%;
+        height: 450px;
     }
 `
 
@@ -53,6 +54,10 @@ export const ClipProject = styled.video`
     width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+
+    @media (max-width: 500px) {
+        height: 100px;
+    }
 `
 
 export const InfoProjectContainer = styled.div`
@@ -91,7 +96,7 @@ export const ProjectDescription = styled.p`
     margin-bottom: 15px;
 
     @media (max-width: 500px) {
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 1px;
         margin-bottom: 15px;
     }
@@ -111,7 +116,6 @@ export const ProjectLink = styled(Link)`
     margin-bottom: 5px;
 
     @media (max-width: 500px) {
-        
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -122,34 +126,21 @@ export const ProjectLink = styled(Link)`
 
 // BUTTON
 
-export const ArrowBtn = styled.button`
+export const ArrowBtnRight = styled.button`
+      position: absolute;
+      right: -20px;
+      background-color: transparent;
+      border: none;
+      color: var(--first-color);
+      font-size: 120px;
+      cursor: pointer;
+    `
+    export const ArrowBtnLeft = styled.button`
     position: absolute;
+    left: -20px;
     background-color: transparent;
     border: none;
     color: var(--first-color);
-    top: 50%;
-    transform: translateY(-50%);
     font-size: 120px;
     cursor: pointer;
-    z-index: 10;
-
-    ${
-        props => props.direction === "left" ?
-        {left: "-70px"} :
-        props => props.direction === "right" ?
-        {right: "-70px"} :
-        ""
-    }
-
-    &:hover {
-        font-size: 130px;
-
-        ${
-        props => props.direction === "left" ?
-        {left: "-75px"} :
-        props => props.direction === "right" ?
-        {right: "-75px"} :
-        ""
-        }
-    }
-`
+  `

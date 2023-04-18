@@ -2,6 +2,7 @@ import { CardStorage } from "Pages/Portfolio/components/Carousel/styledComponent
 import "react-multi-carousel/lib/styles.css"
 import CardProject from "../Card/Card"
 import { dataCardProjects } from "Data/dataCardProjects"
+import { ArrowBtnLeft, ArrowBtnRight} from "Pages/Portfolio/components/Carousel/styledComponents/styledCarousel"
 
 
 
@@ -18,7 +19,7 @@ function CardContainer() {
       },
       tablet: {
         breakpoint: { max: 1000, min: 501 },
-        items: 1
+        items: 2
       },
       mobile: {
         breakpoint: { max: 500, min: 0 },
@@ -30,10 +31,20 @@ function CardContainer() {
         return <CardProject key={data.idx} {...data} />
     })
 
+    const CustomRightArrow = ({ onClick, ...rest }) => {
+        return <ArrowBtnRight onClick={() => onClick()} className="material-icons-round">navigate_next</ArrowBtnRight>;
+    }
+
+    const CustomLeftArrow = ({ onClick, ...rest }) => {
+        return <ArrowBtnLeft onClick={() => onClick()}  className="material-icons-round">navigate_before</ArrowBtnLeft>;
+    }
+
     return (
         <>
             <CardStorage
                 responsive={responsive}
+                customRightArrow={<CustomRightArrow />}
+                customLeftArrow={<CustomLeftArrow />}
             >
                 {cards}
             </CardStorage> 

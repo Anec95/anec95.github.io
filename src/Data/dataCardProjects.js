@@ -77,7 +77,7 @@ export const dataCardProjects = [
         idx: 7,
         clip: emission_calculator_clip,
         title: "Emission Calculator",
-        description: "Sito di natura divulgativa, realizzato per un collettivo.",
+        description: "Progetto finale per il corso fatto con start2impact. Questa web app permette di visualizzare le emissioni prodotte in un intervallo di tempo definito per Stato.",
         link_github: "https://github.com/Anec95",
         site_link_wording: "Calcola le emissioni",
         link_web_site: "https://emission-calculator.netlify.app"

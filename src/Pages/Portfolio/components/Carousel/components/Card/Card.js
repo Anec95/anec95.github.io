@@ -9,7 +9,7 @@ function CardProject({clip, title, description, link_github, link_web_site, site
             whileHover={{ scale: 1.05, zIndex: 10 }}
             transition={{ type: 'spring', stiffness: 200, originX: 0 }}
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { delay: 1.25, duration: 1 }}}
+            animate={{ opacity: 1, transition: { delay: 0.5, duration: 1 }}}
             
         >
             <ClipProject src={clip} autoplay loop></ClipProject>

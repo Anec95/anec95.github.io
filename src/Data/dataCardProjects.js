@@ -6,6 +6,7 @@ import vegan_clip from "Assets/clip/vegan-site.mp4"
 import web_site_1_clip from "Assets/clip/thomas-web-site.mp4"
 import web_site_2_clip from "Assets/clip/thomas-web-site-2.mp4"
 import arti_venture_clip from "Assets/clip/arti-venture.mp4"
+import emission_calculator_clip from "Assets/clip/emission-calculator.mp4"
 
 
 export const dataCardProjects = [
@@ -71,5 +72,14 @@ export const dataCardProjects = [
         link_github: "https://github.com/Anec95",
         site_link_wording: "Visita Sito",
         link_web_site: "https://arti-venture.netlify.app"
+    },
+    {
+        idx: 7,
+        clip: emission_calculator_clip,
+        title: "Emission Calculator",
+        description: "Sito di natura divulgativa, realizzato per un collettivo.",
+        link_github: "https://github.com/Anec95",
+        site_link_wording: "Calcola le emissioni",
+        link_web_site: "https://emission-calculator.netlify.app"
     }
 ]

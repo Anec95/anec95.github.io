@@ -16,7 +16,7 @@ function NavBar(props) {
         } else {
             
         }
-    }, [props.index])
+    }, [props.index, navigate])
     
     return (
         <TemplateNav>

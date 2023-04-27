@@ -2,7 +2,7 @@ import { TemplateNav } from "../styledComponents/styledComponents"
 import { useNavigate } from "react-router-dom"
 import Arrow from "./Arrow"
 import MenuTemplateBtn from "./MenuTemplateBtn"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 function NavBar(props) {
     const navigate = useNavigate()

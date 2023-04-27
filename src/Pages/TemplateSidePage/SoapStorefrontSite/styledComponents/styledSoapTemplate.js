@@ -17,6 +17,7 @@ export const SoapMain = styled.main`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+
     } 
 `
 
@@ -27,6 +28,22 @@ export const SoapTitle = styled.h1`
     top: 40px;
     margin-left: 50%;
     transform: translateX(-50%);
+
+    @media (max-width: 500px) {
+        font-size: 30px;
+        word-wrap: break-word;
+        width: 80%;
+        margin-left: 10%;
+        transform: translateX(0%);
+    }
+
+    @media (min-width: 501px) and (max-width: 1000px) {
+        font-size: 60px;
+        word-wrap: break-word;
+        width: 80%;
+        margin-left: 10%;
+        transform: translateX(0%);
+    } 
 `
 
 export const NavContainer = styled.div`
@@ -37,6 +54,17 @@ export const NavContainer = styled.div`
     top: 20%;
     display: flex;
     justify-content: space-around;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 501px) and (max-width: 1000px) {
+        width: 90%;
+        height: 50%;
+        left: 5%;
+        top: 25%;
+    } 
 `
 
 export const NavMenu = styled.div`
@@ -45,6 +73,14 @@ export const NavMenu = styled.div`
     border: 2px solid var(--light);
     border-radius: 12px;
     cursor: pointer;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        height: 48%;
+    }
+
+    @media (min-width: 501px) and (max-width: 1000px) {
+    } 
 `
 
 export const ElementTitle = styled.h2`
@@ -54,6 +90,14 @@ export const ElementTitle = styled.h2`
     font-size: 40px;
     text-align: right;
     color: var(--light);
+
+    @media (max-width: 500px) {
+        font-size: 22px;
+        color: var(--first-color);
+    }
+
+    @media (min-width: 501px) and (max-width: 1000px) {
+    } 
 `
 
 export const InfoDiv = styled.div`
@@ -70,13 +114,15 @@ export const InfoDiv = styled.div`
     cursor: pointer;
 
     @media (max-width: 500px) {
-        z-index: 1;
-        right: 20px;
-        top: 150px;
+        right: 60px;
+        top: 20px;
+        z-index: 1;        
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        top: 120px;
         z-index: 1;
+        width: ${props => props.show ? "300px" : "50px"};
     } 
 `
 
@@ -98,9 +144,14 @@ export const InfoParagraph = styled.p`
     font-size: 18px;
 
     @media (max-width: 500px) {
+        color: var(--first-color);
+        background-color: var(--light-transparent);
+        border-radius: 8px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        font-size: 20px;
+        font-size: 25px;
+        color: var(--first-color);
+        width: 280px;
     } 
 `

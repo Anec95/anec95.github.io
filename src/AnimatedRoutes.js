@@ -15,6 +15,7 @@ import TemplateLayout from "Pages/TemplateLayout/TemplateLayout";
 import EscapeRoom from "Pages/TemplateSidePage/EscapeRoom/EscapeRoom";
 import TemplateCard from "Pages/Template/components/TemplateCarousel/components/TemplateCard";
 import { dataCardTemplates } from "Data/dataCardTemplates";
+import SoapStorefrontSite from "Pages/TemplateSidePage/SoapStorefrontSite/SoapStorefrontSite";
 
 
 function AnimetedRoutes() {
@@ -64,6 +65,7 @@ function AnimetedRoutes() {
                         functionMinus={indexMinus}
                     />}>
                         <Route path='/template/escape_room' element={<EscapeRoom />} />
+                        <Route path='/template/soap_storefront_site' element={<SoapStorefrontSite />} />
                     </Route>
                 </Route>
             </Routes>

@@ -5,6 +5,7 @@
   --dark: #352D30;
   --light: #FFECED;
   --light-transparent: rgb(255, 236, 237, 0.8);
+  --light-invisible: rgb(255, 236, 237, 0.3);
   --second-light: #F9EFF2;
 }
 

@@ -157,6 +157,7 @@ export const World = styled.div`
 `
 
 export const InfoDiv = styled.div`
+    cursor: pointer;
     position: absolute;
     right: 50px;
     top: 100px;

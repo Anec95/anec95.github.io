@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 export const AboutMeInfo = styled.div`
     height: 50vh;
+    z-index: 1;
 
     @media (max-width: 500px) {
         height: max-content;

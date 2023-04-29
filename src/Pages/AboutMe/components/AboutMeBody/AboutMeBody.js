@@ -46,7 +46,7 @@ function AboutMeBody() {
                 <Start2impactLink to='https://www.start2impact.it/master/digital-marketing/?utm_source=google&utm_medium=cpc&utm_campaign=Search_DigitalMKT&gclid=EAIaIQobChMI9P_ayKiu_AIVW49oCR3FLw1kEAAYASAAEgJlJPD_BwE' target="_blank">
                     start2impact
                 </Start2impactLink>,
-                un corso professionalizzante per diventare web developer - front end.
+                un corso professionalizzante per diventare web developer lato front end.
             </AboutMeDescription>
             <AboutMeDescription
                 as={motion.p}
@@ -54,9 +54,23 @@ function AboutMeBody() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 1 }}
             >
-                Al termine di questo sono
-                intenzionato a continuare lo studio approfondendo la componente di design per riuscire così a rendere
-                i siti dinamici e invogliare il maggior numero di utenti a frequentarli.
+                A partire da febbraio 2023 ho cominciato una collaborazione con un caro amico e così è nata&nbsp;
+                <Start2impactLink to='https://arti-venture.netlify.app' target="_blank">
+                    Arti Venture
+                </Start2impactLink>,
+                associazione di nome e ancora non di fatto che fissa l'obbiettivo di divulgare conoscenze e pratiche
+                naturalistiche.
+            </AboutMeDescription>
+            <AboutMeDescription
+                as={motion.p}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1 }}
+            >
+                Per eventuali collaborazioni e informazioni scrivi a miori.thomas95@gmail.com o contattami tramite&nbsp;
+                <Start2impactLink to='https://it.linkedin.com/in/thomas-m-a75156202?trk=public_profile_samename-profile' target="_blank">
+                    LinkedIn
+                </Start2impactLink>.
             </AboutMeDescription>
         </AboutMeInfo>
     )

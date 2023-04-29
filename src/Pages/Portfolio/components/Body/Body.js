@@ -35,7 +35,7 @@ function Body() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.75, duration: 1 }}
                 >
-                    A destra si trovano i progetti più recenti, mentre man mano che si scorrono quelli a sinistra si va verso i primi.
+                    I primi esposti sono quelli più recenti, mentre man mano che si scorre a destra si va verso i primi realizzati.
                 </Description>
             </InfoContainer>
         </BodyConteiner>

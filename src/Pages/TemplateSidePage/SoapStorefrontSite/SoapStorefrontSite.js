@@ -7,7 +7,7 @@ function SoapStorefrontSite() {
     return (
         <SoapMain>
             <InfoSoapBtn />
-            <SoapTitle>I Saponi di nonna Gesualda</SoapTitle>
+            <SoapTitle>Alchimia dei Saponi</SoapTitle>
             <NavBar/>
         </SoapMain>
     )

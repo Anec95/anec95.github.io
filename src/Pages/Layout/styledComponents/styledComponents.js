@@ -6,7 +6,6 @@ export const DragContainer = styled.div`
     position: absolute;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
 
     @media (max-width: 500px) {
         width: 100vw;

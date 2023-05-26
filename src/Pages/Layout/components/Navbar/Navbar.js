@@ -90,6 +90,8 @@ function Navbar() {
                         location.pathname === ("/about_me/antique") ? "yes" :
                         location.pathname === ("/about_me/cooking") ? "yes" :
                         location.pathname === ("/about_me/nature") ? "yes" :
+                        location.pathname === ("/template/soap_storefront_site") ? "yes" :
+                        location.pathname === ("/template/tattoo_storefront_site") ? "yes" :
                         "no"
                     }
                     as={motion.span}

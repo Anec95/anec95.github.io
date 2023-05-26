@@ -13,6 +13,8 @@ function NavBar(props) {
         } 
         else if(props.index === 1) {
             navigate("/template/soap_storefront_site")
+        } else if(props.index === 2) {
+            navigate("/template/tattoo_storefront_site")
         } else {
             
         }

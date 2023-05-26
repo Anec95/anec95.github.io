@@ -24,9 +24,9 @@ export const dataCardProjects = [
         clip: arti_venture_clip,
         title: "Arti Venture",
         description: "Sito di natura divulgativa, realizzato per un collettivo.",
-        link_github: "https://github.com/Anec95",
-        site_link_wording: "Visita Sito",
-        link_web_site: "https://arti-venture.netlify.app"
+        link_github: "https://github.com/Anec95/associazione-arti-venture",
+        site_link_wording: "",
+        link_web_site: ""
     },
     {
         idx: 2,

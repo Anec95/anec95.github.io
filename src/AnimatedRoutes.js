@@ -16,6 +16,7 @@ import EscapeRoom from "Pages/TemplateSidePage/EscapeRoom/EscapeRoom";
 import TemplateCard from "Pages/Template/components/TemplateCarousel/components/TemplateCard";
 import { dataCardTemplates } from "Data/dataCardTemplates";
 import SoapStorefrontSite from "Pages/TemplateSidePage/SoapStorefrontSite/SoapStorefrontSite";
+import TattooStorefrontSite from "Pages/TemplateSidePage/TattooStorefrontSite/TattooStorefrontSite";
 
 
 function AnimetedRoutes() {
@@ -37,6 +38,8 @@ function AnimetedRoutes() {
     function indexMinus() {
         if (templateIndex > 0) {
             setTemplateIndex(oldValue => oldValue - 1)
+        } else if (templateIndex === 0) {
+            setTemplateIndex(cardTemplateElement.length - 1)
         }
     }
 
@@ -66,6 +69,7 @@ function AnimetedRoutes() {
                     />}>
                         <Route path='/template/escape_room' element={<EscapeRoom />} />
                         <Route path='/template/soap_storefront_site' element={<SoapStorefrontSite />} />
+                        <Route path='/template/tattoo_storefront_site' element={<TattooStorefrontSite />} />
                     </Route>
                 </Route>
             </Routes>

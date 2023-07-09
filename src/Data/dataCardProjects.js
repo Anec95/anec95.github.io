@@ -23,7 +23,7 @@ export const dataCardProjects = [
         idx: 1,
         clip: arti_venture_clip,
         title: "Arti Venture",
-        description: "Sito di natura divulgativa, realizzato per un collettivo.",
+        description: "Sito di natura divulgativa, realizzato per un progetto volto alla collaborazione e al creare rete nel territorio Trentino.",
         link_github: "https://github.com/Anec95/associazione-arti-venture",
         site_link_wording: "",
         link_web_site: ""
@@ -33,7 +33,7 @@ export const dataCardProjects = [
         clip: web_site_2_clip,
         title: "Thomas Miori - Web Developer",
         description: "Ecco il mio nuovo sito personale. Fatto su misura e d'eleganza per me.",
-        link_github: "",
+        link_github: "https://github.com/Anec95/anec95.github.io",
         site_link_wording: "",
         link_web_site: ""
     },
@@ -50,7 +50,7 @@ export const dataCardProjects = [
         idx: 4,
         clip: christmas_clip,
         title: "Christmas Quest",
-        description: "Christmas Quest è un lavoro di story telling interattivo dove le scelte dell'utente hanno delle ripercussioni sulla storia. Al momento il suo sviluppo è allo stato di Beta. Si tratta di un progetto personale sviluppato per svago e studio.",
+        description: "Christmas Quest è un lavoro di story telling interattivo dove le scelte dell'utente hanno delle ripercussioni sulla storia. Si tratta di un progetto personale sviluppato per svago e studio.",
         link_github: "https://github.com/Anec95/christmas-slaughter",
         site_link_wording: "Start your adventure!",
         link_web_site: "https://christmas-quest.netlify.app"

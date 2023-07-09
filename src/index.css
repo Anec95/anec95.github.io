@@ -7,6 +7,8 @@
   --light-transparent: rgb(255, 236, 237, 0.8);
   --light-invisible: rgb(255, 236, 237, 0.3);
   --second-light: #F9EFF2;
+
+  --scuro: #324B4D;
 }
 
 
@@ -37,10 +39,35 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2, h3 {
   font-family: 'Aboreto';
-  color: var(--first-color);
+  /* color: var(--first-color); */
 }
 
 p {
   font-family: 'Roboto';
-  color: var(--first-color);
+  /* color: var(--first-color); */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--light);
+  opacity: 1; /* Firefox */
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 1ex;
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+html {
+  scroll-snap-type: y mandatory;
 }

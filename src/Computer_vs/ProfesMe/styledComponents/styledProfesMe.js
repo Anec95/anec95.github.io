@@ -103,13 +103,13 @@ export const SkillTitle = styled.h3`
 
 export const DevelopContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 40px;
 
     @media (max-width: 500px) {
         margin-bottom: 0px;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }

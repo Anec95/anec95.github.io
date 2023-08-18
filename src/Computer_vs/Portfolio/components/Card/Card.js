@@ -16,13 +16,13 @@ function Card(props) {
             <ProjectTitle>{props.title}</ProjectTitle>
             <ProjectDescription>{props.description}</ProjectDescription>
             <ProjectLink
-                href={props.link_github}
+                to={props.link_github}
                 target="_blank"
             >
                 GITHUB
             </ProjectLink>
             <ProjectLink
-                href={props.link_web_site}
+                to={props.link_web_site}
                 target="_blank"
             >
                 {props.site_link_wording}

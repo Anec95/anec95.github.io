@@ -1,12 +1,12 @@
-// import AnimetedRoutes from "AnimatedRoutes";
-import Home from "Home";
+import AnimetedRoutes from "AnimatedRoutes";
+// import Home from "Home";
 
 
 function App() {
 
   return (
-        // <AnimetedRoutes />
-        <Home />
+        <AnimetedRoutes />
+        // <Home />
   )
 }
 

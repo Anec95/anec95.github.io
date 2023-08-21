@@ -23,8 +23,7 @@ function AboutMe() {
             position={1}
         >
             <TitleComponent
-                title={"Thomas Miori"}
-                subtitle={"React Web Developer - Front End"}
+                logo={true}
             />
             <TextComponent
                 title={title}

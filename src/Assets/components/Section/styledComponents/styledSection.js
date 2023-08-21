@@ -87,6 +87,30 @@ export const StyledTitle = styled.h1`
     }
 `
 
+export const StyledLogo = styled.img`
+    width: 900px;
+    margin: -180px -120px;
+
+    @media (max-width: 500px) {
+        width: 500px;
+        margin: -140px -80px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 501px) and (max-width: 1000px) {
+        width: 600px;
+        margin: -130px -70px;
+    }
+
+    @media (min-width: 1001px) and (max-width: 1300px) {
+        width: 700px;
+    }
+
+    @media (min-width: 1301px) and (max-width: 1600px) {
+        width: 800px;
+    }
+`
+
 export const StyledSubtitle = styled.h3`
     font-size: 25px;
     text-align: end;

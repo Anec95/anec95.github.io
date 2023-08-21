@@ -1,16 +1,17 @@
-import { StyledSubtitle, StyledTitle, TitleContainer } from "../../styledComponents/styledSection"
-
+import { StyledSubtitle, StyledTitle, TitleContainer, StyledLogo } from "../../styledComponents/styledSection"
+import logoTM from "Assets/images/logo/logoTM_black.png"
 
 
 function TitleComponent(props) {
 
     return (
         <TitleContainer>
-            <StyledTitle
+            {props.logo && <StyledLogo src={logoTM} />}
+            {props.title && <StyledTitle
                 title={props.title}
             >
                 {props.title}
-            </StyledTitle>
+            </StyledTitle>}
             {props.subtitle && <StyledSubtitle>{props.subtitle}</StyledSubtitle>}
         </TitleContainer>
     )

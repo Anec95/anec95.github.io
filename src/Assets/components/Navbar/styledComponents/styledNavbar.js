@@ -82,9 +82,10 @@ export const NavElement = styled.a`
     cursor: pointer;
     font-family: 'Aboreto';
     font-variant: small-caps;
-    text-decoration: ${props =>
+    /* text-decoration: ${props =>
         props.underline === true ? "underline" : "none"
-    };
+    }; */
+    text-decoration: none;
     color: var(--scuro);
 `
 

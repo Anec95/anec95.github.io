@@ -4,7 +4,9 @@ import { TextContainer, TextTitle, StyledText } from "../../styledComponents/sty
 function TextComponent(props) {
 
     return (
-        <TextContainer>
+        <TextContainer
+            aboutMe={props.aboutMe}
+        >
             {props.title && <TextTitle>{props.title}</TextTitle>}
             <StyledText>{props.text}</StyledText>
             {props.text2 && <StyledText>{props.text2}</StyledText>}

@@ -1,6 +1,6 @@
 import "react-multi-carousel/lib/styles.css"
 import { CardStorage, CarouselContainer } from "../../styledComponents/styledSection"
-import Card from "Computer_vs/Portfolio/components/Card/Card";
+import Card from "Assets/components/Portfolio/components/Card/Card";
 import { dataCardProjects } from "Data/dataCardProjects";
 
 function CarouselComponent(props) {
@@ -32,7 +32,7 @@ function CarouselComponent(props) {
           return <Card key={data.idx} {...data} />
       })
       
-      // const carsTemplate =
+      // const cardsTemplate =
 
     return (
         <CarouselContainer>

@@ -6,7 +6,8 @@ function TitleComponent(props) {
 
     return (
         <TitleContainer>
-            {props.logo && <StyledLogo src={logoTM} />}
+            {/* {props.logo && <StyledLogo src={logoTM} />} */}
+            {props.innerWidth > 500 && <StyledLogo src={logoTM} />}
             {props.title && <StyledTitle
                 title={props.title}
             >

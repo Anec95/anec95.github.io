@@ -38,7 +38,10 @@ export const Section = styled.section`
     }
 
     @media (max-width: 500px) {
-    
+        margin-top: 100px;
+        height: calc(100vh - 100px);
+        overflow-y: scroll;
+        box-sizing: content-box;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -58,7 +61,7 @@ export const TitleContainer = styled.div`
 
     @media (max-width: 500px) {
         height: 70px;
-        top: 8%;
+        top: 20%;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -76,6 +79,7 @@ export const StyledTitle = styled.h1`
             "30px" :
             "35px"
         };
+        margin-top: -100px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -140,9 +144,31 @@ export const TextContainer = styled.div`
     height: 110px;
 
     @media (max-width: 500px) {
-        width: 75%;
-        padding: 0;
-        top: calc(8% + 80px);
+        width: 72%;
+        /* position: relative; */
+        padding: 0 10px;
+        margin: auto;
+        top: ${props => props.aboutMe ? "3%" : "calc(0% + 60px)"};
+        left: 6%;
+        overflow-y: scroll;
+        height: calc(100% - 100px);
+
+        ::-webkit-scrollbar {
+            height: 5px;
+            width: 5px;
+            display: block;
+            background: var(--light-invisible);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 1ex;
+            display: block;
+            background: #882200;
+        }
+
+        ::-webkit-scrollbar-corner {
+            display: block;
+        }
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -193,7 +219,9 @@ export const CarouselContainer = styled.div`
 
     @media (max-width: 500px) {
         padding: 0;
+        height: 300px;
         justify-content: center;
+        bottom: 65px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -215,8 +243,8 @@ export const CardStorage = styled(Carousel)`
 
     @media (max-width: 500px) {
         width: 90%;
-        margin-top: -80px;
-        height: 350px;
+        margin-top: 0px;
+        height: 300px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {

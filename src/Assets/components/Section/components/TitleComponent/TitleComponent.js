@@ -5,7 +5,9 @@ import logoTM from "Assets/images/logo/logoTM_black.png"
 function TitleComponent(props) {
     console.log(props.innerWidth)
     return (
-        <TitleContainer>
+        <TitleContainer
+            logo={props.logo}
+        >
             {props.innerWidth > 500 && <StyledLogo src={logoTM} />}
             {props.title && <StyledTitle
                 title={props.title}

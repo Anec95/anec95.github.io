@@ -16,9 +16,20 @@ export const StyledGrid = styled.div`
     border-radius: 12px;
 
     @media (max-width: 500px) {
-        width: 75%;
+        /* width: 75%;
         padding: 0;
-        top: calc(8% + 80px);
+        top: calc(8% + 80px); */
+        all: unset;
+
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color: #882200;
+        height: 400px;
+        border: 2px solid var(--scuro);
+        border-radius: 12px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {

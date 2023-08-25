@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
     top: 0;
     width: 100%;
     height: 100px;
-    background-color: rgba(143,71,97,0.2);
+    background-color: #E9D2D9;
     box-sizing: border-box;
     padding-top: 30px;
     z-index: 10;
@@ -31,7 +31,7 @@ export const StyledFooter = styled.footer`
     margin-left: -60px;
     width: 120px;
     height: 40px;
-    background-color: rgba(143,71,97,0.2);
+    background-color: #E9D2D9;
     border-radius: 30px;
     z-index: 10;
 `

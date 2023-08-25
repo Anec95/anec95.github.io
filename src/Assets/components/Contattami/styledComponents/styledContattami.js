@@ -15,10 +15,12 @@ export const StyledForm = styled.form`
     color: var(--light);
 
     @media (max-width: 500px) {
-        width: 70%;
+        /* width: 70%;
         padding: 0;
         margin: 0;
-        top: calc(0% + 50px);
+        top: calc(0% + 50px); */
+        all: unset;
+        width: 100%;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -39,6 +41,15 @@ export const StyledTextArea = styled.textarea`
     background-color: rgba(0,40,44,0.7);
     font-family: 'Roboto';
     margin: 20px 0 5px 0;
+
+    @media (max-width: 500px) {
+        margin: 10px;
+        width: 70%;
+    }
+
+    @media (min-width: 501px) and (max-width: 1000px) {
+    
+    }
 `
 
 export const StyledInput = styled.input`
@@ -79,4 +90,24 @@ export const StyledInput = styled.input`
         "rgba(0,40,44,0.8)" : 
         ""
     };
+
+    @media (max-width: 500px) {
+        
+        ${
+            props => props.type === "submit" ?
+            {
+                margin: "10px",
+                marginLeft: "50%",
+                transform: "translateX(-50%)"
+            } :
+            {
+                margin: "10px",
+                width: "70%"
+            }
+        }
+    }
+
+    @media (min-width: 501px) and (max-width: 1000px) {
+    
+    }
 `

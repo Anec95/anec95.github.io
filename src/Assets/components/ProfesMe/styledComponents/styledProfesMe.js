@@ -34,9 +34,10 @@ export const StyledTextContainer = styled.div`
     }
 
     @media (max-width: 500px) {
-        width: 90%;
+        /* width: 90%;
         height: 70%;
-        top: calc(0% + 80px);
+        top: calc(0% + 80px); */
+        all: unset;
     }
     
     @media (min-width: 501px) and (max-width: 1000px) {

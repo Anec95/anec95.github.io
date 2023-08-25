@@ -38,10 +38,35 @@ export const Section = styled.section`
     }
 
     @media (max-width: 500px) {
-        margin-top: 100px;
+        /* margin-top: 100px;
         height: calc(100vh - 100px);
         overflow-y: scroll;
-        box-sizing: content-box;
+        box-sizing: content-box; */
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        margin: 100px 5px 50px 10px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        height: 100vh;
+        overflow-y: scroll;
+
+        ::-webkit-scrollbar {
+            height: 5px;
+            width: 5px;
+            display: block;
+            background: var(--light-invisible);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 1ex;
+            display: block;
+            background: #882200;
+        }
+
+        ::-webkit-scrollbar-corner {
+            display: block;
+        }
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -60,8 +85,9 @@ export const TitleContainer = styled.div`
     box-sizing: border-box;
 
     @media (max-width: 500px) {
-        height: 70px;
-        top: 20%;
+        /* height: 70px;
+        top: 20%; */
+        all: unset;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -79,7 +105,6 @@ export const StyledTitle = styled.h1`
             "30px" :
             "35px"
         };
-        margin-top: -100px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -144,8 +169,7 @@ export const TextContainer = styled.div`
     height: 110px;
 
     @media (max-width: 500px) {
-        width: 72%;
-        /* position: relative; */
+        /* width: 72%;
         padding: 0 10px;
         margin: auto;
         top: ${props => props.aboutMe ? "3%" : "calc(0% + 60px)"};
@@ -168,7 +192,8 @@ export const TextContainer = styled.div`
 
         ::-webkit-scrollbar-corner {
             display: block;
-        }
+        } */
+        all: unset;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -197,7 +222,7 @@ export const StyledText = styled.p`
     padding-bottom: 10px;
 
     @media (max-width: 500px) {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 130%;
     }
 
@@ -218,10 +243,12 @@ export const CarouselContainer = styled.div`
     align-items: center;
 
     @media (max-width: 500px) {
-        padding: 0;
+        all: unset;
+
+        /* padding: 0;
         height: 300px;
         justify-content: center;
-        bottom: 65px;
+        bottom: 65px; */
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -242,7 +269,7 @@ export const CardStorage = styled(Carousel)`
     padding: 10px;
 
     @media (max-width: 500px) {
-        width: 90%;
+        width: 94%;
         margin-top: 0px;
         height: 300px;
     }

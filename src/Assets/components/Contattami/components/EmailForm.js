@@ -73,7 +73,7 @@ function EmailForm() {
             <StyledTextArea
                 name="message"
                 value={message}
-                placeholder='Scrivi il tuo messaggio qui...'
+                placeholder='Scrivi qua il tuo messaggio...'
                 onChange={(event) => {setMessage(event.target.value)}}
             />
             <StyledInput type="submit" value="INVIA" />

@@ -29,7 +29,7 @@ export const StyledFooter = styled.footer`
     bottom: 20px;
     left: 50%;
     margin-left: -60px;
-    width: 120px;
+    width: 130px;
     height: 40px;
     background-color: #E9D2D9;
     border-radius: 30px;
@@ -44,5 +44,7 @@ export const StyledArrow = styled.button`
 
 export const StyledTextIndex = styled.h3`
     font-size: 14px;
+    width: max-content;
     font-family: 'Roboto';
+    padding: 2px 4px;
 `

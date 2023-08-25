@@ -15,7 +15,7 @@ import {
 
 
 
-function Home() {
+function Home(props) {
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
@@ -26,7 +26,9 @@ function Home() {
     return (
         <>
             <Navbar />
-            <AboutMe />
+            <AboutMe
+                innerWidth={props.innerWidth}
+            />
             <ProfesMe />
             <Portfolio />
             <Template />

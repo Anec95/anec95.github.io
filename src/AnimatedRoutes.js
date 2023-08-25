@@ -33,7 +33,11 @@ function AnimetedRoutes() {
         <AnimatePresence>
             {windowSize.innerWidth > 500 &&
                 <Routes location={location} key={location.pathname}>
-                    <Route path='/' element={<Home />} />
+                    <Route path='/' element={
+                        <Home
+                            innerWidth={windowSize.innerWidth}
+                        />
+                    } />
                     <Route path="/analogic_photography" element={< Analogic/>} />
                 </Routes>
             }

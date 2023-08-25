@@ -39,7 +39,8 @@ export const Section = styled.section`
 
     @media (max-width: 500px) {
         margin-top: 100px;
-        height: calc(100vh - 100px);
+        /* height: calc(100vh - 100px); */
+        height: max-content;
         overflow-y: scroll;
         box-sizing: content-box;
     }

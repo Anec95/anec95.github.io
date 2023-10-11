@@ -1,6 +1,6 @@
 :root {
   /* --first-color: #564145;  */
-  --background: #FFF5F8;
+  /* --background: #FFF5F8; */
   --first-color: #4F1C09;
   --dark: #352D30;
   --light: #FFECED;
@@ -9,6 +9,11 @@
   --second-light: #F9EFF2;
 
   --scuro: #324B4D;
+
+  --background: #F0F0F0;
+  --title-color: #9E6424;
+  --about_me_text: #E9E8E3;
+  --text_black: #293133;
 }
 
 
@@ -25,6 +30,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 code {

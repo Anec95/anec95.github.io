@@ -7,8 +7,6 @@ export const StyledMain = styled.main`
     height: 100vh;
     box-sizing: border-box;
     padding-top: 200px;
-    /* background-color: #3A4459; */
-    background-color: var(--text_black);
     background-color: var(--background);
 
     display: flex;
@@ -34,6 +32,8 @@ export const StyledTitle = styled.h1`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        width: 600px;
+        font-size: 50px;
     }
 `
 
@@ -50,6 +50,9 @@ export const StyledTextBox = styled.div`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        width: 600px;
+        padding-top: 20px;
+        padding-left: 20px;
     }
 `
 
@@ -110,8 +113,8 @@ export const CardStorage = styled(Carousel)`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        width: 90%;
-        height: 470px;
+        width: 680px;
+        height: 500px;
         margin-top: 0px;
     } 
 ` 
@@ -120,7 +123,6 @@ export const CardStorage = styled(Carousel)`
 // CARD
 
 export const StyledCard = styled.div`
-    /* background-color: #E4DBE6; */
     background-color: var(--text_black);
     width: 320px;
     height: 380px;
@@ -134,7 +136,7 @@ export const StyledCard = styled.div`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        width: 340px;
+        width: 300px;
         height: 450px;
     }
 `
@@ -162,7 +164,8 @@ export const ProjectTitle = styled.h3`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        
+        font-size: 22px;
+        padding: 6px 20px;
     }
 `
 

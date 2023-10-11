@@ -2,18 +2,20 @@ import styled from "styled-components";
 import backgroundImg from 'Assets/images/analogic-photo/3-cime-autumn-2021.JPG'
 
 export const HomeBody = styled.main`
-    box-sizing: border-box;
+    width: 100vw;
     height: 100vh;
     background-image: url(${backgroundImg});
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
     filter: opacity(50%);
 
     @media (max-width: 500px) {
-        background-position: -220px 0;
+        background-position: -240px 0;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        background-position: -350px 0;
     }
 `
 
@@ -31,6 +33,7 @@ export const LogoBox = styled.div`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        top: 30%;
     }
 `
 
@@ -43,20 +46,22 @@ export const LogoImg  = styled.img`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        height: 120px;
     }
 `
 
 export const TitleBox = styled.div`
-    height: 60px;
+    height: 200px;
     width: max-content;
     display: flex;
     flex-direction: column;
     
     @media (max-width: 500px) {
-        
+        height: 60px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        height: 120px;
     }
 `
 
@@ -69,6 +74,7 @@ export const LogoTitle = styled.h1`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        font-size: 50px;
     }
 `
 
@@ -81,5 +87,6 @@ export const LogoSubtitle = styled.h3`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        font-size: 40px;
     }
 `

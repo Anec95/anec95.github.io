@@ -33,7 +33,9 @@ export const StyledTitleBox = styled.div`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        
+        width: 600px;
+        padding-left: 0;
+        justify-content: center;
     }
 `
 
@@ -47,7 +49,7 @@ export const StyledTitle = styled.h1`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        
+        font-size: 60px;
     }
 `
 
@@ -59,7 +61,7 @@ export const StyledPhotoTitle = styled.img`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        
+        width: 80px;
     }
 `
 
@@ -82,8 +84,7 @@ export const StyledForm = styled.form`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        padding: 0;
-        margin: 0;
+        margin-top: 140px;
     }
 `
 
@@ -100,8 +101,8 @@ export const StyledMailImg = styled.img`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        padding: 0;
-        margin: 0;
+        margin-right: -240px;
+        margin-top: 150px;
     }
 `
 
@@ -130,7 +131,6 @@ export const StyledTextArea = styled.textarea`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-    
     }
 `
 

@@ -14,14 +14,15 @@ export const Header = styled.header`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
     box-shadow: ${props =>
         props.pathname !== "/" && "0px 20px 30px var(--text_black)"
     };
     background-color: ${props =>
         (props.pathname !== "/") && "var(--background)"
     };
-    overflow: hidden;
-
+    
     ${props =>
         props.pathname === "/aboutme" ? {
             backgroundImage: `url(${aboutMeHeader})`,
@@ -49,11 +50,11 @@ export const Header = styled.header`
     
     @media (max-width: 500px) {
         height: 100px;
-        z-index: 10;
         justify-content: flex-start;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        justify-content: flex-start;
     }
 `
 
@@ -77,6 +78,8 @@ export const LinkNavbar = styled(Link)`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        margin-right: 0px;
+        margin-left: 30px;
     }
 `
 
@@ -104,5 +107,9 @@ export const StyledBackIcon = styled.span`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        font-size: 30px;
+        padding: 0;
+        margin-right: -20px;
+        margin-left: 40px;
     }
 `

@@ -13,14 +13,14 @@ export const SocialIconContainer = styled.div`
     z-index: 10;
     
     @media (max-width: 500px) {
-        height: 0px;
+        height: 20px;
         right: 10px;
         bottom: 20px;
         margin: 10px 0;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-
+        
     }
 `
 
@@ -62,5 +62,6 @@ export const SocialIcon = styled.img`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        
     }
 `

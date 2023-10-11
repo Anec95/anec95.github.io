@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const StyledMain = styled.main`
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
     padding-top: 200px;
     box-sizing: border-box;
     background-color: #8EA0B0;
@@ -50,6 +50,8 @@ export const StyledTitle = styled.h1`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        width: 600px;
+        font-size: 50px;
     }
 `
 
@@ -70,6 +72,10 @@ export const StyledTextBox = styled.div`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        width: 600px;
+        padding-top: 30px;
+        padding-left: 20px;
+        margin-bottom: 50px;
     }
 `
 
@@ -94,6 +100,7 @@ export const StyledParagraph = styled.p`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        font-size: 22px;
     }
 `
 
@@ -111,6 +118,7 @@ export const StyledPhoto = styled.img`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        margin-right: 40px;
     }
 `
 
@@ -130,7 +138,10 @@ export const DescriptionContainer = styled.div`
     }
     
     @media (min-width: 501px) and (max-width: 1000px) {
-        
+        width: 600px;
+        margin-top: 20px;
+        padding-left: 20px;
+        align-items: center;
     }
 `
 
@@ -161,7 +172,8 @@ export const SkillContainer = styled.div`
     }
     
     @media (min-width: 501px) and (max-width: 1000px) {
-        
+        width: 600px;
+        padding-bottom: 80px;
     }
 `
 
@@ -188,6 +200,11 @@ export const DevelopContainer = styled.div`
 
     @media (max-width: 500px) {
         margin-bottom: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (min-width: 501px) and (max-width: 1000px) {
         justify-content: center;
         align-items: center;
     }
@@ -238,7 +255,7 @@ export const DevelopText = styled.p`
     
     @media (min-width: 501px) and (max-width: 1000px) {
         margin-bottom: 20px;
-        width: 120px;
+        width: 130px;
         text-align: center;
         word-wrap: break-word;
     }

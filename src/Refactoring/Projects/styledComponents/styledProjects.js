@@ -19,6 +19,9 @@ export const StyledMain = styled.main`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 `
 
@@ -34,6 +37,8 @@ export const StyledInfoBox = styled.div`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        width: 100%;
+        align-items: center;
     }
 `
 
@@ -64,6 +69,7 @@ export const StyledProjectLink = styled(Link)`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        font-size: 22px;
     }
 `
 
@@ -78,6 +84,7 @@ export const StyledDescriptionBox = styled.div`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        padding-bottom: 100px;
     }
 `
 
@@ -91,6 +98,7 @@ export const StyledTitle = styled.h1`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        padding-top: 50px;
     }
 `
 
@@ -98,12 +106,13 @@ export const StyledParagraph = styled.p`
     color: var(--text_black);
     padding-top: 30px;
     font-size: 18px;
-    line-height : 1.5;
+    line-height: 1.5;
 
     @media (max-width: 500px) {
         padding-top: 10px;
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        font-size: 22px;
     }
 `

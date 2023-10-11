@@ -32,6 +32,8 @@ export const StyledTitle = styled.h1`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
+        width: 600px;
+        font-size: 50px;
     }
 `
 
@@ -83,9 +85,7 @@ export const StyledGrid = styled.div`
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        width: 60%;
-        right: 0%;
-        padding: 0 90px 0 20px;
+        width: 600px;
     }
 `
 

@@ -1,7 +1,5 @@
 import { StyledParagraph, StyledParagraphsBox, StyledPhoto, StyledTextBox } from "../../../styledComponents/styledAboutMe"
-// import photo from "Assets/images/analogic-photo/boy-by-the-lake-2020.jpg"
-// import photo2 from "Assets/images/thomas-bio-4.jpg"
-import photo3 from "Assets/images/thomas-bio-5.jpg"
+import photo3 from "Assets/images/thomas-bio-5-low.jpg"
 import { motion } from "framer-motion"
 
 
@@ -9,8 +7,6 @@ function TextBox() {
 
     return (
         <StyledTextBox>
-            {/* <StyledPhoto src={photo} alt="me" /> */}
-            {/* <StyledPhoto src={photo2} alt="me" /> */}
             <StyledPhoto
                 as={motion.img}
                 whileHover={{ scale: 1.3 }}

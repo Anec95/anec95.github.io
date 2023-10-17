@@ -65,6 +65,7 @@ function LinkBox() {
                     transition={{ type: 'spring', stiffness: 200, originX: 0 }}
                     to={"/"}
                     pathname={location.pathname}
+                    type={"home"}
                 >
                     <StyledIcon
                         className="material-icons-outlined"

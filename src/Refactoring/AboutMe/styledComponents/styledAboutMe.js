@@ -45,7 +45,7 @@ export const StyledTitle = styled.h1`
     color: var(--text_black);
 
     @media (max-width: 500px) {
-        width: 350px;
+        width: 80%;
         font-size: 30px;
     }
 
@@ -65,7 +65,7 @@ export const StyledTextBox = styled.div`
     justify-content: center;
 
     @media (max-width: 500px) {
-        width: 350px;
+        width: 80%;
         padding-top: 20px;
         padding-left: 10px;
         margin-bottom: 50px;
@@ -132,7 +132,7 @@ export const DescriptionContainer = styled.div`
     margin-top: 40px;
 
     @media (max-width: 500px) {
-        width: 350px;
+        width: 80%;
         margin-top: 20px;
         align-items: center;
     }
@@ -165,7 +165,7 @@ export const SkillContainer = styled.div`
     flex-direction: column;
 
     @media (max-width: 500px) {
-        width: 350px;
+        width: 80%;
         justify-content: center;
         align-items: center;
         padding-bottom: 80px;

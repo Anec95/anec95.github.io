@@ -1,5 +1,5 @@
 import analogic_background from "Assets/images/analogic.jpg"
-import { StyledGrid } from "Refactoring/Hobby/styledComponents/styledHobby"
+import { StyledGrid, StyledWorkInProgress } from "Refactoring/Hobby/styledComponents/styledHobby"
 import CuriosityElement from "../CuriosityElement/CuriosityElement"
 
 
@@ -14,6 +14,7 @@ function CuriositiesGrid() {
                 background_photo={analogic_background}
                 link={"/hobby/analogic_photography"}
             />
+            <StyledWorkInProgress>Nuovi interessi verranno catalogati a breve ...</StyledWorkInProgress>
         </StyledGrid>
     )
 }

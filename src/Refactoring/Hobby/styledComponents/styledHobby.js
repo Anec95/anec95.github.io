@@ -128,3 +128,20 @@ export const StyledCardTitle = styled.h3`
         
     }
 `
+
+export const StyledWorkInProgress = styled.h3`
+    font-size: 30px;
+    order: 2;
+    color: var(--text_black);
+    margin: 80px auto;
+
+    @media (max-width: 500px) {
+        font-size: 18px;
+        text-align: center;
+        margin: 50px auto;
+    }
+    
+    @media (min-width: 501px) and (max-width: 1000px) {
+        
+    }
+`

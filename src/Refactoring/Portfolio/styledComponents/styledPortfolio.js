@@ -27,7 +27,7 @@ export const StyledTitle = styled.h1`
     font-size: 60px;
 
     @media (max-width: 500px) {
-        width: 350px;
+        width: 80%;
         font-size: 30px;
     }
 
@@ -44,7 +44,7 @@ export const StyledTextBox = styled.div`
     color:  var(--text_black);
 
     @media (max-width: 500px) {
-        width: 350px;
+        width: 80%;
         padding-top: 10px;
         padding-left: 10px;
     }
@@ -107,8 +107,8 @@ export const CardStorage = styled(Carousel)`
     /* border: 0.1px solid var(--text_black); */
 
     @media (max-width: 500px) {
-        width: 350px;
-        margin-top: 20px;
+        width: 340px;
+        margin-top: 15px;
         height: 250px;
     }
 

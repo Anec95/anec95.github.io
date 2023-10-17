@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import aboutMeHeader from "Assets/images/header_photo/versailles-gardens-2022-_pcvs_.png"
-import portfolioHeader from "Assets/images/header_photo/header_ph-markus-spiske.jpg"
-import hobbyHeader from "Assets/images/header_photo/header_ph-suzy-hazelwood.jpg"
-import contactHeader from "Assets/images/header_photo/contacts.jpg"
+import aboutMeHeader from "Assets/images/header_photo/versailles-gardens-2022-_3_low.png"
+import portfolioHeader from "Assets/images/header_photo/header_ph-markus-spiske_low.jpg"
+import hobbyHeader from "Assets/images/header_photo/header_ph-suzy-hazelwood_low.jpg"
+import contactHeader from "Assets/images/header_photo/contacts-header.jpg"
 
 
 export const Header = styled.header`

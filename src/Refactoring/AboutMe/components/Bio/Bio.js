@@ -2,12 +2,12 @@ import { StyledTitle } from "Refactoring/AboutMe/styledComponents/styledAboutMe"
 import TextBox from "./components/TextBox"
 
 
-function Bio() {
+function Bio(props) {
 
     return (
         <>
             <StyledTitle>About Me</StyledTitle>
-            <TextBox />
+            <TextBox width={props.width} />
         </>
     )
 }

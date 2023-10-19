@@ -3,12 +3,12 @@ import Skill from "./components/Skill";
 import { StyledTitle } from "Refactoring/AboutMe/styledComponents/styledAboutMe";
 
 
-function ProfessionalmenteMe() {
+function ProfessionalmenteMe(props) {
 
     return (
         <>
             <StyledTitle>Professionalmente Me</StyledTitle>
-            <Description />
+            <Description width={props.width} />
             <Skill />
         </>
     )

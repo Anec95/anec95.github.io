@@ -3,13 +3,13 @@ import photoAnimated from "Assets/images/thomas-bio-2-dark-slow_animation.gif"
 import { motion } from "framer-motion"
 
 
-function TextBox() {
+function TextBox(props) {
 
     return (
         <StyledTextBox>
             <StyledPhoto
                 as={motion.img}
-                whileHover={{ scale: 1.3 }}
+                whileHover={{ scale: props.width > 700 ? 1.3 : 1 }}
                 transition={{ type: 'spring', stiffness: 200, originX: 0 }}
                 src={photoAnimated}
                 position={"left"}

@@ -1,5 +1,5 @@
 import { StyledParagraph, StyledParagraphsBox, StyledPhoto, StyledTextBox } from "../../../styledComponents/styledAboutMe"
-import photoAnimated from "Assets/images/thomas-bio-2-dark-slow_animation.gif"
+import photoAnimated from "Assets/images/photo-abaut_me/thomas-bio-2-dark-slow_animation.gif"
 import { motion } from "framer-motion"
 
 

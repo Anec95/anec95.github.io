@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { StyledParagraph, StyledParagraphsBox, StyledPhoto, StyledTextBox } from "Refactoring/AboutMe/styledComponents/styledAboutMe"
-import photoAnimated  from "Assets/images/thomas-bio-4-dark-slow_animation.gif"
+import photoAnimated  from "Assets/images/photo-abaut_me/thomas-bio-4-dark-slow_animation.gif"
 
 function Description(props) {
     const text = `Appassionato di antiquariato, letteratura, fotografia e natura,

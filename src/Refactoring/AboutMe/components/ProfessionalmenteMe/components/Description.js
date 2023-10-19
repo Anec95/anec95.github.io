@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
-import { DescriptionContainer, ProfParagraph } from "Refactoring/AboutMe/styledComponents/styledAboutMe"
-
+import { StyledParagraph, StyledParagraphsBox, StyledPhoto, StyledTextBox } from "Refactoring/AboutMe/styledComponents/styledAboutMe"
+import photoAnimated  from "Assets/images/thomas-bio-4-dark-slow_animation.gif"
 
 function Description() {
     const text = `Appassionato di antiquariato, letteratura, fotografia e natura,
@@ -20,48 +20,27 @@ function Description() {
     // const text5 = `“Chi vuol muovere il mondo, prima muova sé stesso!” --Socrate`
 
     return (
-        <DescriptionContainer>
-            <ProfParagraph
-                as={motion.p}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2, duration: 1 }}
-            >
-                {text}
-            </ProfParagraph>
-            <ProfParagraph
-                as={motion.p}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3, duration: 1 }}
-            >
-                {text2}
-            </ProfParagraph>
-            <ProfParagraph
-                as={motion.p}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4, duration: 1 }}
-            >
-                {text3}
-            </ProfParagraph>
-            {/* <ProfParagraph
-                as={motion.p}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5, duration: 1 }}
-            >
-                {text4}
-            </ProfParagraph>
-            <ProfParagraph
-                as={motion.p}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.6, duration: 1 }}
-            >
-                {text5}
-            </ProfParagraph> */}
-        </DescriptionContainer>
+        <StyledTextBox>
+            <StyledParagraphsBox>
+                <StyledParagraph>
+                    {text}
+                </StyledParagraph>
+                <StyledParagraph>
+                    {text2}
+                </StyledParagraph>
+                <StyledParagraph>
+                    {text3}
+                </StyledParagraph>
+            </StyledParagraphsBox>
+            <StyledPhoto
+                as={motion.img}
+                whileHover={{ scale: 1.3 }}
+                transition={{ type: 'spring', stiffness: 200, originX: 0 }}
+                src={photoAnimated}
+                alt="me"
+                position={"right"}
+            />
+        </StyledTextBox>
     )
 }
 

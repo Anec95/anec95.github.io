@@ -93,6 +93,9 @@ export const LinkNavbar = styled(Link)`
     @media (min-width: 501px) and (max-width: 1000px) {
         margin-right: 0px;
         margin-left: 30px;
+        backdrop-filter: ${ props =>
+            props.pathname.includes("/portfolio") && "blur(100px)"
+        };
     }
 `
 
@@ -112,12 +115,12 @@ export const StyledBackIcon = styled.span`
     padding: 0 10px 5px 0;
     color: #E9E8E3;
     cursor: pointer;
-    backdrop-filter: blur(100px);
     
     @media (max-width: 500px) {
         font-size: 22px;
         padding: 0;
         margin-right: -10px;
+        backdrop-filter: blur(100px);
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
@@ -125,5 +128,6 @@ export const StyledBackIcon = styled.span`
         padding: 0;
         margin-right: -20px;
         margin-left: 40px;
+        backdrop-filter: blur(100px);
     }
 `

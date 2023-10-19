@@ -107,57 +107,49 @@ export const StyledParagraph = styled.p`
 export const StyledPhoto = styled.img`
     width: 200px;
     object-fit: cover;
-    margin-right: 50px;
+    margin-right: ${props =>
+        props.position === "left" && "50px"
+    };
+    margin-left: ${props =>
+        props.position === "right" && "50px"
+    };
     border-radius: 12px;
     box-shadow: 15px 10px 30px var(--text_black);
-    filter: saturate(50%);
+    filter: saturate(60%);
 
     @media (max-width: 500px) {
         width: 100px;
-        margin-right: 20px;
+        margin-right: ${props =>
+            props.position === "left" && "30px"
+        };
+        margin-left: ${props =>
+            props.position === "right" && "30px"
+        };
+        object-position: ${props =>
+            props.position === "left" ? "" :
+            props.position === "right" ? "-160px" :
+            ""
+        };
+        box-shadow: 10px 5px 10px var(--text_black);
     }
 
     @media (min-width: 501px) and (max-width: 1000px) {
-        margin-right: 40px;
+        margin-right: ${props =>
+            props.position === "left" && "40px"
+        };
+        margin-left: ${props =>
+            props.position === "right" && "40px"
+        };
+        object-position: ${props =>
+            props.position === "left" ? "" :
+            props.position === "right" ? "-100px" :
+            ""
+        };
     }
 `
 
 
 //PROFESSIONALMENTE ME
-
-export const DescriptionContainer = styled.div`
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-
-    @media (max-width: 500px) {
-        width: 80%;
-        margin-top: 20px;
-        align-items: center;
-    }
-    
-    @media (min-width: 501px) and (max-width: 1000px) {
-        width: 600px;
-        margin-top: 20px;
-        padding-left: 20px;
-        align-items: center;
-    }
-`
-
-export const ProfParagraph = styled.p`
-    font-size: 20px;
-    margin-bottom: 20px;
-
-    @media (max-width: 500px) {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    
-    @media (min-width: 501px) and (max-width: 1000px) {
-        font-size: 22px;
-    }
-`
 
 export const SkillContainer = styled.div`
     width: 1000px;

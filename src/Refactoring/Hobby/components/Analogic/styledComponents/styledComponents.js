@@ -7,7 +7,7 @@ export const SidePageContainer = styled.div`
     position: relative;
     width: 100vw;
     height: 100vh;
-    padding: 100px 15%;
+    padding: 200px 15% 100px 15%;
     overflow-x: hidden;
 
     ::-webkit-scrollbar {
@@ -29,7 +29,7 @@ export const SidePageContainer = styled.div`
 
 
     @media (max-width: 500px) {
-        padding: 20px 40px;
+        padding: 120px 40px 60px 40px;
     }
 `
 

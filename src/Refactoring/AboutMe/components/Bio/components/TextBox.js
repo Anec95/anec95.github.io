@@ -1,5 +1,5 @@
 import { StyledParagraph, StyledParagraphsBox, StyledPhoto, StyledTextBox } from "../../../styledComponents/styledAboutMe"
-import photo3 from "Assets/images/thomas-bio-5-low.jpg"
+import photoAnimated from "Assets/images/thomas-bio-2-dark-slow_animation.gif"
 import { motion } from "framer-motion"
 
 
@@ -11,7 +11,8 @@ function TextBox() {
                 as={motion.img}
                 whileHover={{ scale: 1.3 }}
                 transition={{ type: 'spring', stiffness: 200, originX: 0 }}
-                src={photo3}
+                src={photoAnimated}
+                position={"left"}
                 alt="me"
             />
             <StyledParagraphsBox>

@@ -24,9 +24,11 @@ function TextBox(props) {
                 <StyledParagraph>
                     Nella vita privata, i miei più grandi interessi sono
                     l'antiquariato - che coltivo andando a ricercare oggetti
-                    curiosi e unici nei più grandi mercatini e mercati rimanga
-                    pura e inviolata - e la natura - amo stare immerso nella
-                    natura a contemplarla, ascoltando... e meditando senza pensieri.
+                    curiosi e unici nei più grandi mercatini e mercati -, fotografia
+                    analogica - amo pensare che con lo scatto analogico si riesca a
+                    immortalare l'attimo, cogliendo l'unicità del momento, mantenendolo
+                    puro e inviolato - e la natura - immergo corpo e spirito nella natura,
+                    contemplandola, ascoltando i suoi suoni... e meditando senza pensieri.
                 </StyledParagraph>
                 <StyledParagraph>
                     Durante le esperienze che ho affrontato nella vita, ho compreso
